@@ -37,15 +37,6 @@ fastify.get("/", async function handler(req, reply) {
     reply.code(200);
     reply.header("content-type", "image/jpeg");
     reply.send(screenshot);
-
-    // return {
-    //   statusCode: 200,
-    //   headers: {
-    //     "content-type": `image/jpeg`,
-    //   },
-    //   body: screenshot.toString("base64"),
-    //   isBase64Encoded: true,
-    // };
   } catch (error) {
     console.error(error);
     return {
