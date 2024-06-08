@@ -47,7 +47,7 @@ fastify.get("/", async function handler(req, reply) {
 });
 
 try {
-  await fastify.listen({ port: 3000, host: "::1" });
+  await fastify.listen({ port: 3000, host: "::" });
 } catch (err) {
   fastify.log.error(err);
   process.exit(1);
