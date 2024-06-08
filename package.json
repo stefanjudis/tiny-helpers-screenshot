@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "dependencies": {
+    "fastify": "^4.27.0",
+    "playwright": "^1.44.1"
+  },
+  "scripts": {
+    "postinstall": "npx playwright install chromium"
+  }
+}
